@@ -16,6 +16,6 @@
   
   - name: Checkout roles repository.
     ansible.builtin.git:
-      repo: {{ git_repository }}
+      repo: "{{ git_repository }}"
       dest: /etc/ansible/roles
-      version: {{ git branch }}
+      version: "{{ git branch }}"
